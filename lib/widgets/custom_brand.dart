@@ -8,29 +8,35 @@ class CutsomBrand extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 350,
-      height: 250,
-      //height: MediaQuery.of(context).size.height*.25,
-      //height: 150,
-      decoration: BoxDecoration(color: Color(0xffFAF0D7)),
+      padding: EdgeInsets.symmetric(horizontal: 60),
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height * .2,
+      color: Color(0xffFAF0D7),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(height: 20,),
+          SizedBox(
+            height: 20,
+          ),
           Text(
             'Select Brand',
             style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.bold,
-                fontSize: 20),
+                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
           ),
-          CarouselSlider(
-              items: [
-                Image.asset(shink,fit: BoxFit.cover,width: double.infinity,)
-              ],
-              options: CarouselOptions(
-                  //viewportFraction:.9,
-              )),
+          Expanded(
+            child: Container(
+              width: double.infinity,
+              child: CarouselSlider(
+                  items: [
+                    Image.asset(
+                      shink,
+                      fit: BoxFit.cover,
+                    )
+                  ],
+                  options: CarouselOptions(
+                      viewportFraction: .4, enlargeCenterPage: true)),
+            ),
+          ),
         ],
       ),
     );

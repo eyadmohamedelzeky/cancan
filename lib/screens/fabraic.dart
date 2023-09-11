@@ -1,11 +1,8 @@
 import 'package:cancan/constants/strings.dart';
 import 'package:cancan/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 class FabricPreferences extends StatelessWidget {
   FabricPreferences({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

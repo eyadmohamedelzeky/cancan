@@ -9,26 +9,33 @@ class CustomSilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return CarouselSlider(
       items: [
-        Container(
-          decoration: BoxDecoration(
-              color: Colors.white60, borderRadius: BorderRadius.circular(10)),
-          width: 160,
+        Card(
+          color: Colors.white,
           child: Container(
-            width: 160,
-            padding: EdgeInsets.all(4),
+            decoration: BoxDecoration(
+                color: Colors.white60, borderRadius: BorderRadius.circular(10)),
+            //width: 160,
             child: Column(
               children: [
-                Image.asset(
-                  man,
-                  fit: BoxFit.cover,
-                  width: 160,
-                  height: 185,
-                  // width: 250,
-                  // height: 180,
+                Expanded(
+                  child: Image.asset(
+                    man,
+                    fit: BoxFit.cover,
+                    // width: 160,
+                    // height: 185,
+                    height: MediaQuery.of(context).size.height * .2, //130
+                    width: MediaQuery.of(context).size.width * .4,
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Text(
                   'Arabic kandora',
                   style: TextStyle(fontSize: 16),
+                ),
+                SizedBox(
+                  height: 8,
                 ),
               ],
             ),
@@ -37,7 +44,8 @@ class CustomSilder extends StatelessWidget {
       ],
       options: CarouselOptions(
         autoPlay: false,
-
+        enlargeCenterPage: true,
+        viewportFraction: .4,
       ),
     );
   }
