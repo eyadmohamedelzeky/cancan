@@ -143,12 +143,7 @@ class MeasurmentScreen extends StatelessWidget {
                             SizedBox(
                               height: 10,
                             ),
-                            CustomTextFormField(hintText: '35.54',, border: 5, textInputType: TextInputType.number)
-                              keyboardType: ,
-                              decoration: InputDecoration(
-                                filled: true,
-                                fillColor: Color(0xffFFFFFF),
-                                hintText: border: OutlineInputBorder(borderRadius: BorderRadius.circular(5))),),
+                            CustomTextFormField(hintText: '35.54', border: 5, textInputType: TextInputType.number,isFilled: true,color: Colors.white,),
                           ],
                         ),
                       ),
@@ -168,13 +163,8 @@ class MeasurmentScreen extends StatelessWidget {
                             SizedBox(
                               height: 10,
                             ),
-                            TextFormField(
-                              keyboardType: TextInputType.number,
-                              decoration: InputDecoration(
-                                filled: true,
-                                fillColor: Color(0xffFFFFFF),
-                                hintText: '35.48',border: OutlineInputBorder(borderRadius: BorderRadius.circular(5))),),
-                          ],
+                            CustomTextFormField(hintText: '35.48', border: 5, textInputType: TextInputType.number,color: Colors.white,)
+                            ],
                         ),
                       ),
                     ),
@@ -199,12 +189,7 @@ class MeasurmentScreen extends StatelessWidget {
                             SizedBox(
                               height: 10,
                             ),
-                            TextFormField(
-                              keyboardType: TextInputType.number,
-                              decoration: InputDecoration(
-                                filled: true,
-                                fillColor: Color(0xffFFFFFF),
-                                hintText: '16.27',border: OutlineInputBorder(borderRadius: BorderRadius.circular(5))),),
+                            CustomTextFormField(hintText: '16.27', border: 5, textInputType: TextInputType.number,color: Colors.white),
                           ],
                         ),
                       ),
@@ -225,12 +210,7 @@ class MeasurmentScreen extends StatelessWidget {
                             SizedBox(
                               height: 10,
                             ),
-                            TextFormField(
-                              keyboardType: TextInputType.number,
-                              decoration: InputDecoration(
-                                filled: true,
-                                fillColor: Color(0xffFFFFFF),
-                                hintText: '5.90',border: OutlineInputBorder(borderRadius: BorderRadius.circular(5))),),
+                            CustomTextFormField(hintText: '5.90', border: 5, textInputType: TextInputType.number,color: Colors.white,)
                           ],
                         ),
                       ),
@@ -254,12 +234,9 @@ class MeasurmentScreen extends StatelessWidget {
                     ),
                     Container(
                       width: 180,
-                      child: TextFormField(
-                        keyboardType: TextInputType.number,
-                        decoration: InputDecoration(
-                          filled: true,
-                            fillColor: Color(0xffFFFFFF),
-                            hintText: '28.75',border: OutlineInputBorder(borderRadius: BorderRadius.circular(5))),
+                      child: CustomTextFormField(textInputType: TextInputType.number,
+                        color: Colors.white,
+                             hintText: '28.75', border: 5,
 
                       ),
                     ),
